@@ -8,5 +8,5 @@ const mongourl = ""
 mongoose.connect(mongourl)
 
 .then(()=>{console.log(``)})
-.catch((e)=>{console.log(``${e})})
-app.listen(port,()=>{console.log(""${port});})
+.catch((e)=>{console.log(`${e}`)})
+app.listen(port,()=>{console.log(`${port}`);})
