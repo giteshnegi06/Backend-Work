@@ -1,17 +1,9 @@
 {
-  "name": "backend-work",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "\"Learning Backend\"",
-  "homepage": "https://github.com/giteshnegi06/Backend-Work#readme",
-  "bugs": {
-    "url": "https://github.com/giteshnegi06/Backend-Work/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/giteshnegi06/Backend-Work.git"
-  },
+  "description": "\"Learning Backend \"",
   "license": "ISC",
-  "author": "\"Gitesh\"",
+  "author": "Gitesh",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
