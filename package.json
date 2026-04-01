@@ -1,0 +1,26 @@
+{
+  "name": "backend-work",
+  "version": "1.0.0",
+  "description": "\"Learning Backend\"",
+  "homepage": "https://github.com/giteshnegi06/Backend-Work#readme",
+  "bugs": {
+    "url": "https://github.com/giteshnegi06/Backend-Work/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giteshnegi06/Backend-Work.git"
+  },
+  "license": "ISC",
+  "author": "\"Gitesh\"",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.3.3",
+    "nodemon": "^3.1.14"
+  }
+}
