@@ -1,8 +1,9 @@
 const mongoose = require ('mongoose')
 const express = require ('express')
-const {evenOdd} = require('./Controller/usercontrolls')
+const route = require('./Routes/Usserroutes')
 
 const app = express()
+app.use(express.json())
 const port = 5000;
 
 const mongourl = 'mongodb+srv://negigitesh_db_user:GlV0rvqZnOIvw5ql@gitesh.1ziv0xy.mongodb.net/'
@@ -12,4 +13,4 @@ mongoose.connect(mongourl)
 .catch((e)=>{console.log(`There is an error: ${e}`)})
 app.listen(port,()=>{console.log(`The server is running the port: ${port}`)})
 
-console.log(evenOdd(2))
+app.use('/', route)
