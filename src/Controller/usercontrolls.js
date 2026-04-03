@@ -1,11 +1,12 @@
  const usermodel = require('../Models/Usermodels')
  
- exports.createuser =(req, res)=>{
+ 
+ exports.createuser =async(req, res)=>{
     try{
         const data = req.body;
         const {name, email, password}= data;
         console.log(data);
-        const db = usermodel.create(data)
+        const db = await usermodel.create(data)
         res.status(200).send({status:true, msg:"Data Created Sucessfully", data:data})
     }
     catch(error){

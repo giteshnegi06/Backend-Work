@@ -1,13 +1,14 @@
 const mongoose = require ('mongoose')
 const express = require ('express')
 const route = require('./Routes/Usserroutes')
+const dotenv = require ('dotenv')
+dotenv.config()
 
 const app = express()
 app.use(express.json())
-const port = 5000;
+const port = process.env.port || 8000;
 
-const mongourl = 'mongodb+srv://negigitesh_db_user:GlV0rvqZnOIvw5ql@gitesh.1ziv0xy.mongodb.net/'
-mongoose.connect(mongourl)
+mongoose.connect(process.env.mongosurl)
 
 .then(()=>{console.log('The mongoDB is connected suceeesfully')})
 .catch((e)=>{console.log(`There is an error: ${e}`)})
